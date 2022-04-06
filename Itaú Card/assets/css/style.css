@@ -1,0 +1,430 @@
+/* VARIABLES */
+:root {
+    --font-a: Arial, sans-serif;
+    --page-black-color: #000;
+    --page-white-color: #FFF;
+    --page-background-color-gray: #F1F1F1;
+    --page-background-color-white: #FAF7F5;
+    --page-background-color-orange: #EC7000;
+    --page-footer-color-gray: #EEE9E4;
+    --page-footer-color-blue: #375DAA;
+    --page-footer-line-color-gray: #D8D8D8;
+    --page-yellow-color: #FFFF00;
+    --page-blue-color: #003399;
+    --page-gray-color: #707070;
+}
+
+body {
+    font-family: var(--font-a);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 60px;
+    background: var(--page-background-color-gray);
+}
+
+.mensage {
+    height: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 18px;
+}
+
+.mensage a {
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--page-black-color);
+}
+
+.mensage a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.logo img {
+    width: 150px;
+    margin: auto 50px auto auto;
+    cursor: pointer;
+}
+
+.trip {
+    display: flex;
+    flex-direction: column;
+    height: 324px;
+    background: var(--page-background-color-orange);
+}
+
+.trip .box {
+    width: 78px;
+    height: 78px;
+    border: 2px solid var(--page-yellow-color);
+    border-radius: 12px;
+    margin: 40px 0px 0px 50px;
+}
+
+.box img {
+    margin: 13px;
+}
+
+.trip .tourism {
+    margin: 20px 0px 0px 50px;
+}
+
+.tourism h1 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--page-white-color);
+}
+
+.purchase_reversal {
+    max-width: 540px;
+    width: 100%;
+    height: 145px;
+    margin: 29px auto 21px auto;
+    /* background: red; */
+}
+
+.purchase_reversal h3 {
+    color: var(--page-blue-color);
+}
+
+.purchase_reversal p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+    color: var(--page-gray-color);
+}
+
+.measures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 486px;
+    background: var(--page-background-color-white);
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--page-gray-color);
+    margin: 20px 0px 0px 0px;
+}
+
+.markdown {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 51px 0px 0px -85px;
+}
+
+.markdown p:nth-child(2) {
+    font-weight: bold;
+    color: var(--page-blue-color);
+    margin-left: 30px;
+}
+
+.markdown p {
+    color: var(--page-gray-color);
+}
+
+.line {
+    border: 1px solid var(--page-background-color-orange);
+    max-width: 491px;
+    width: 100%;
+    margin: 22px 45px 22px 0px;
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0px 0px 0px -38px;
+}
+
+.purchase_rebate {
+    line-height: 20px;
+    margin-left: 31px;
+}
+
+.purchase_rebate p strong {
+    color: var(--page-blue-color);
+}
+
+.purchase_rebate p {
+    color: var(--page-gray-color);
+}
+
+.tickets {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0px 0px 0px -10px;
+}
+
+.ticket_rebooking {
+    line-height: 20px;
+    margin-left: 31px;
+}
+
+.ticket_rebooking p strong {
+    color: var(--page-blue-color);
+}
+
+.ticket_rebooking p {
+    color: var(--page-gray-color);
+}
+
+.line:last-child {
+    margin: 10px 45px 22px 0px;
+}
+
+.whole {
+    max-width: 590px;
+    width: 100%;
+    height: 219px;
+    border: 1px solid var(--page-background-color-orange);
+    border-radius: 16px;
+    text-align: center;
+    margin: 55px auto;
+}
+
+.whole p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: var(--page-blue-color);
+    margin-top: 24px;
+}
+
+.whole button strong {
+    font-size: 16px;
+}
+
+.whole button {
+    height: 61px;
+    width: 248px;
+    background: var(--page-blue-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--page-white-color);
+    margin: 40px 10px 0px 10px;
+    padding: 16px;
+}
+
+/* FOOTER */
+footer {
+    height: 340px;
+    background: var(--page-footer-color-gray);
+}
+
+footer .digital_channels {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.text_footer {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: -55px;
+}
+
+.text_footer strong {
+    color: var(--page-background-color-orange);
+}
+
+.text_footer p {
+    color: var(--page-blue-color);
+    margin-top: 20px;
+}
+
+.line_footer {
+    height: 129px;
+    border: 1px solid var(--page-background-color-orange);
+    margin: 0px 43px 0px 43px;
+}
+
+footer .site_app {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.site_app a {
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.site_app a:hover {
+    color: rgb(109, 109, 240);
+    transition: 1s linear;
+}
+
+.site_app .site {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.site_app .app {
+    display: flex;
+    align-items: center;
+}
+
+footer .last_line {
+    max-width: 530px;
+    width: 100%;
+    border: 2px solid var(--page-footer-line-color-gray);
+    margin: 40px auto auto auto;
+}
+
+footer .tel {
+    max-width: 535px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto auto auto;
+}
+
+.tel p {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--page-blue-color);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 580px) {
+    .logo img {
+        margin: 0 auto;
+    }
+
+    .trip {
+        align-items: center;
+    }
+
+    .trip .box {
+        margin: 40px 0px 0px 0px;
+    }
+
+    .trip .tourism {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .tourism h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .purchase_reversal {
+        text-align: center;
+        height: 100%;
+    }
+
+    .purchase_reversal p {
+        font-size: 12px;
+    }
+
+    .measures {
+        height: 100%;
+        text-align: center;
+    }
+
+    .measures .line {
+        display: none;
+    }
+
+    .measures .text p {
+        font-size: 12px;
+    }
+
+    .markdown {
+        display: block;
+        margin: 51px 0px 0px 0px;
+        font-size: 12px;
+    }
+
+    .markdown p:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .availability {
+        display: block;
+        margin: 30px 0px 30px 0px;
+        font-size: 12px;
+    }
+
+    .purchase_rebate {
+        margin-left: 0px;
+    }
+
+    .tickets {
+        display: block;
+        margin: 0px;
+        font-size: 12px;
+    }
+
+    .ticket_rebooking {
+        margin-left: 0px;
+    }
+
+    .whole {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    footer {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    .digital_channels {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text_footer {
+        margin-left: 0px;
+    }
+
+    .line_footer {
+        display: none;
+    }
+
+    .tel {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tel p {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .tourism {
+        height: 100%;
+    }
+
+    .tourism h1 {
+        font-size: 19px;
+    }
+}

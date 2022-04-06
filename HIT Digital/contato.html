@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="assets/images/logo-hit.png" onclick="logo()" />
+            </div>
+        </header>
+        <section>
+            <div class="buttons">
+                <button onclick="introducao()">Introdução</button>
+                <button onclick="contato()">Contato</button>
+            </div>
+            <div class="introduction">
+                <p>Contato</p>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="form">
+                <form autocomplete="off">
+                    <div class="inputs">
+                        <input type="text" name="text" id="name" placeholder="Nome*" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail*" required>
+                    </div>
+                    <textarea rows="10" placeholder="Mensagem*" required></textarea>
+                    <div class="submit">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <a href="https://hitdigital.com.br" target="_blank">Hit Digital</a>
+        </footer>
+    </div>
+
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

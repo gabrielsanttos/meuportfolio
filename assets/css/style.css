@@ -1,0 +1,353 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+/* VARIABLES */
+:root {
+    --font-play: 'Play';
+    --background-body: rgb(48, 48, 48);
+    --page-color-black: black;
+    --page-color-white: white;
+    --page-color-gray: gray;
+    --page-color-hover-menu: #DDD;
+    --page-color-menu: rgb(201, 201, 201);
+    --page-color-button: rgb(158, 157, 157);
+    --page-color-brown: brown;
+    --page-color-dark-brown: rgb(53, 27, 26);
+    --page-color-red: red;
+    --page-color-blue: blue;
+    --page-color-yellow: yellow;
+    --page-color-green: green;
+}
+
+/* BODY */
+body {
+    font-family: var(--font-play);
+    background: var(--background-body)
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1066px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--page-color-black);
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--page-color-white);
+    transition: .2s ease-in;
+}
+
+header a:hover {
+    color: var(--page-color-menu);
+    transition: .2s ease-out;
+}
+
+/* MENU MOBILE */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+
+#menu_opener {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#menu_area {
+    width: 0px;
+    height: 100vh;
+    background: var(--page-color-black);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all ease .4s;
+}
+
+#menu_area ul,
+#menu_area li {
+    padding: 0;
+    list-style: none;
+}
+
+#menu_area li {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menu_area li:hover {
+    background: var(--page-color-hover-menu);
+}
+
+#menu_area a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--page-color-white);
+    transition: 0.2s ease-out;
+}
+
+#menu_area a:hover {
+    text-decoration: none;
+    color: var(--page-color-gray);
+    transition: 0.2s ease-in;
+}
+
+/* END MENU MOBILE */
+
+/* ABOUT */
+
+/* MAIN */
+main {
+    height: 87vh;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.name h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--page-color-white);
+    padding: 3px;
+}
+
+.name span {
+    color: var(--page-color-dark-brown);
+}
+
+.name h3 {
+    text-align: center;
+    color: var(--page-color-white);
+}
+
+.description {
+    /* height: 48%; */
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.description h3 {
+    font-weight: 700;
+    color: var(--page-color-dark-brown);
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: var(--page-color-white);
+    line-height: 25px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+.social .link {
+    width: 50px;
+    height: 50px;
+    background-color: var(--page-color-black);
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.social a:hover {
+    background-color: var(--page-color-button);
+    transition: 0.3s ease-in;
+}
+
+/* END ABOUT */
+
+/* EXPERIENCES */
+.titles {
+    margin: 10px;
+}
+
+.projects {
+    padding: 10px;
+}
+
+.projects div {
+    width: 100%;
+    height: 100px;
+    background: var(--page-color-hover-menu);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--page-color-black);
+    transition: 0.2s ease-out;
+}
+
+.projects a:hover {
+    transition: 0.2s ease-in;
+    color: var(--page-color-gray);
+}
+
+.projects p {
+    margin-top: 15px;
+}
+
+/* END EXPERIENCES */
+
+/* QUALIFICATIONS */
+.titles {
+    margin: 0 10px;
+}
+
+.titles h1 {
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--page-color-dark-brown);
+    margin: 30px 0;
+}
+
+.titles h3 {
+    text-transform: uppercase;
+    color: var(--page-color-white);
+    margin: 25px 0;
+}
+
+.languages img {
+    width: 45px;
+    height: 65px;
+    margin: 0 10px;
+}
+
+.languages img:last-child {
+    margin-left: 20px;
+}
+
+.others h3 {
+    text-transform: uppercase;
+    color: var(--page-color-white);
+    margin: 25px 10px;
+}
+
+.others ul {
+    margin: 18px 20px;
+    color: var(--page-color-white);
+    line-height: 25px;
+    list-style: inside;
+    list-style-type: circle;
+}
+
+/* CERTIFICATES */
+.courses {
+    padding: 10px;
+}
+
+.courses div {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    background: var(--page-color-hover-menu);
+    border-radius: 15px;
+}
+
+.courses .background {
+    background: var(--page-color-black);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.courses h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--page-color-white);
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.courses a {
+    text-decoration: none;
+    color: var(--page-color-black);
+    line-height: 25px;
+    margin: 8px;
+    transition: 0.2s ease-out;
+}
+
+.courses a:hover {
+    transition: 0.2s ease-in;
+    color: var(--page-color-gray)
+}
+
+.courses .cursoemvideo {
+    margin: 25px 0;
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 425px) {
+    .titles h1 {
+        font-size: 35px;
+        margin-top: 55px;
+    }
+    .titles h3 {
+        font-size: 16px;
+    }
+    .others h3 {
+        font-size: 16px;
+    }
+    .others ul {
+        font-size: 15px;
+    }
+}

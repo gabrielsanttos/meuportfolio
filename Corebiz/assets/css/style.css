@@ -1,0 +1,831 @@
+/* media 1220px se precisar, 768px, 425px, e se precisar 320 */
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* VARIABLES */
+:root {
+    --font-nunito: 'Nunito';
+    --font-lato: 'Lato';
+    --page-color-gray: #7A7A7A;
+    --page-color-black: #000;
+    --page-color-white: #FFF;
+    --page-circle-color-red: #F8475F;
+    --page-circle-color-gray: #BDBDBD;
+    --page-line-color-gray: #C0C0C0;
+    --page-square-color-gray: #E6E8EA;
+    --page-register-color-gray: #F2F2f2;
+    --page-news-color-gray: #333333;
+    --page-placeholder-color-gray: #585858;
+}
+
+/* BODY */
+body {
+    font-family: var(--font-nunito);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    color: var(--page-color-gray);
+    overflow: hidden;
+    margin: 0px 70px 0px 0px;
+}
+
+header .menu img {
+    width: 22px;
+    height: 22px;
+    display: none;
+    cursor: pointer;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header .search {
+    margin-bottom: 5px;
+}
+
+header #field {
+    width: 718px;
+    border: none;
+    border-bottom: 1px solid var(--page-color-gray);
+    padding: 0px 0px 10px 0px;
+}
+
+header #field::placeholder {
+    font-family: var(--font-nunito);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+header .myaccount {
+    display: flex;
+    align-items: center;
+}
+
+header .myaccount img {
+    width: 23px;
+}
+
+header .myaccount a {
+    text-decoration: none;
+    color: var(--page-color-gray);
+}
+
+header .myaccount a:hover {
+    color: var(--page-color-black);
+}
+
+header .cart {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: -25px;
+}
+
+header .cart .circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #F8475F;
+}
+
+header .circle p {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: var(--font-nunito);
+    color: var(--page-color-white);
+    line-height: 14px;
+    text-align: center;
+}
+
+/* SECTIONS */
+.banner {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftside {
+    position: absolute;
+    color: #FFF;
+}
+
+.leftside .banner_image img {
+    max-width: 735px;
+    width: 100%;
+    height: 430px;
+}
+
+.leftside .text {
+    position: absolute;
+    top: 150px;
+    left: 130px;
+}
+
+.leftside .text p {
+    font-size: 30px;
+}
+
+.leftside .text h1 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.text br {
+    display: none;
+}
+
+.rightside {
+    background-image: url(../images/migrate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin-left: auto;
+}
+
+.banner .underside {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.underside .ellipse {
+    width: 10px;
+    height: 10px;
+    background-color: var(--page-circle-color-gray);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -37px
+}
+
+.underside .ellipse:first-child {
+    background-color: var(--page-circle-color-red);
+}
+
+.shelf {
+    max-width: 1248px;
+    width: 100%;
+    height: 407px;
+    margin: 0 auto;
+}
+
+.best_sellers p {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 25px 0px 0px 44px;
+}
+
+.best_sellers .line {
+    width: 65px;
+    border: 4px solid var(--page-line-color-gray);
+    margin: 5px 0px 0px 44px;
+}
+
+.shelf .arrow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+
+.shelf .arrow img {
+    width: 12px;
+    cursor: pointer;
+}
+
+.shelf .products {
+    display: flex;
+    justify-content: center;
+    gap: 99px;
+    margin: -178px 0;
+}
+
+.products .shoe {
+    width: 100%;
+    max-width: 219px;
+    height: 349px;
+}
+
+.products .shoe .info {
+    height: 150px;
+}
+
+.products .belt {
+    width: 100%;
+    max-width: 219px;
+    height: 339px;
+}
+
+.products .boot {
+    width: 100%;
+    max-width: 219px;
+    height: 339px;
+}
+
+.products .sandal {
+    width: 100%;
+    max-width: 219px;
+    height: 339px;
+}
+
+.products .item img {
+    width: 100%;
+}
+
+.products .info_first {
+    width: 100%;
+    height: 146px;
+    margin-top: -3px;
+    background-color: var(--page-square-color-gray);
+}
+
+.products .info {
+    width: 100%;
+    height: 136px;
+    margin-top: -6px;
+}
+
+.products .title p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--page-color-gray);
+    padding: 7px 0;
+}
+
+.products .star {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.products .price .discount:first-child {
+    margin-top: 20px;
+}
+
+.products .price {
+    text-align: center;
+}
+
+.products .discount p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--page-color-black);
+}
+
+.products .portion p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--page-color-gray);
+    margin-bottom: 5px;
+}
+
+.products .purchase button {
+    width: 125px;
+    height: 32px;
+    background-color: var(--page-color-black);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-family: var(--font-nunito);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--page-color-white);
+}
+
+.products .sandal .purchase {
+    display: none;
+}
+
+.products .standard {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--page-color-gray);
+    margin: 4px 0;
+}
+
+.products .standard_last {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--page-color-gray);
+    margin: 4px 0;
+    text-decoration: line-through;
+}
+
+.products .discount p {
+    margin-top: -4px;
+}
+
+.balls .underside_b {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+    display: none;
+}
+
+.underside_b .ellipse {
+    width: 10px;
+    height: 10px;
+    background-color: var(--page-circle-color-gray);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -37px
+}
+
+.underside_b .ellipse:first-child {
+    background-color: var(--page-circle-color-red);
+}
+
+.register {
+    height: 146px;
+    background: var(--page-register-color-gray);
+    margin: 75px 0px 0px 0px;
+}
+
+.register .news p {
+    text-align: center;
+    font-family: var(--font-lato);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--page-news-color-gray);
+    padding: 24px 0;
+}
+
+.register .news br {
+    display: none;
+}
+
+.register form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.register form input {
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+}
+
+.register #text {
+    width: 280px;
+    padding: 16px;
+}
+
+.register #email {
+    width: 280px;
+    padding: 16px;
+}
+
+.register #button {
+    width: 140px;
+    background: var(--page-color-black);
+    border: none;
+    font-family: var(--font-lato);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--page-color-white);
+    cursor: pointer;
+}
+
+.register input::placeholder {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--page-placeholder-color-gray);
+    font-family: var(--font-lato);
+}
+
+/* FOOTER */
+footer {
+    height: 213px;
+    background-color: #000;
+}
+
+footer .area {
+    max-width: 1170px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+footer .local p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--page-color-white);
+}
+
+footer .local .line_footer {
+    width: 44px;
+    height: 0px;
+    border: 5px solid #FFFFFF;
+    margin: 16px 0px 20px 0px;
+}
+
+footer .local .address p {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+footer .contact .retangle {
+    width: 198px;
+    height: 38px;
+    background: var(--page-color-white);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+footer .retangle img {
+    width: 15px;
+    height: 18px;
+    margin: 0px 18px 0px 18px;
+}
+
+footer .retangle a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--page-color-black);
+}
+
+footer .logos {
+    max-width: 238px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 36px;
+}
+
+footer .logos p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--page-color-white);
+}
+
+footer .logos img {
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 1240px) {
+    header .myaccount {
+        display: none;
+    }
+
+    header .menu img {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        display: grid;
+        height: 100%;
+        padding: 7px 11px;
+    }
+
+    .header {
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo {
+        grid-area: logo;
+        margin-left: 55px;
+    }
+
+    .search {
+        grid-area: search;
+        width: 100%;
+        max-width: 100px;
+        margin: 37px 0px 0px;
+    }
+
+    .search #field {
+        width: 520px;
+    }
+
+    .menu {
+        grid-area: menu;
+    }
+
+    .myaccount {
+        grid-area: myaccount;
+    }
+
+    .cart {
+        grid-area: cart;
+    }
+
+    .header {
+        grid-template-areas:
+            "menu logo myaccount cart"
+            "search search search search"
+        ;
+    }
+
+    .banner_image img {
+        display: none;
+    }
+
+    .leftside {
+        width: 100%;
+        max-width: 420px;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 30%;
+    }
+
+    .leftside .text {
+        position: initial;
+        top: 0;
+        left: 0;
+    }
+
+    .rightside {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .banner .underside {
+        justify-content: center;
+        top: 30px;
+    }
+
+    .shelf .arrow {
+        display: none;
+    }
+
+    .shelf .products {
+        margin: 35px 0;
+    }
+
+    .products .belt {
+        display: none;
+    }
+
+    .balls .underside_b {
+        display: flex;
+    }
+
+    .underside_b .ellipse {
+        margin-top: -19px;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer .area {
+        justify-content: space-evenly;
+    }
+
+    footer .local {
+        margin-right: 35px;
+    }
+
+    footer .local p {
+        margin-top: 27px;
+    }
+
+    footer .logos {
+        justify-content: space-between;
+        margin: 24px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner .leftside {
+        margin-left: 10%;
+    }
+
+    .products .boot {
+        display: none;
+    }
+
+    .products .shoe .info_first {
+        background: none;
+    }
+
+    .sandal .info .purchase {
+        display: block;
+    }
+
+    .products .purchase button {
+        width: 140px;
+        height: 36px;
+    }
+
+    footer .area {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .underline {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@media (max-width: 740px) {
+    .register {
+        height: 100%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .register #text {
+        margin-bottom: 12px;
+    }
+
+    .register #button {
+        width: 280px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .search #field {
+        width: 350px;
+    }
+
+    .underside .ellipse {
+        width: 7px;
+        height: 7px;
+    }
+
+    .best_sellers p {
+        font-size: 18px;
+    }
+
+    .best_sellers .line {
+        width: 32px;
+        border: 3px solid var(--page-line-color-gray);
+    }
+
+    .shelf .products {
+        gap: 38px;
+    }
+
+    .products .shoe {
+        max-width: 132px;
+        height: 122px;
+    }
+
+    .products .sandal {
+        max-width: 132px;
+        height: 122px;
+    }
+
+    .products .title p {
+        font-size: 10px;
+    }
+
+    .products .star {
+        gap: 2px;
+    }
+
+    .products .discount p {
+        font-size: 16px;
+    }
+
+    .products .purchase {
+        font-size: 15px;
+    }
+
+    .balls .underside_b {
+        margin: 19px 0px 40px 0px;
+    }
+
+    .underside_b .ellipse {
+        width: 7px;
+        height: 7px;
+    }
+
+    .register .news {
+        display: flex;
+        justify-content: center;
+    }
+
+    .register .news p {
+        text-align: left;
+    }
+
+    .register .news br {
+        display: block;
+    }
+
+    footer .local {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 520px) {
+    header .logo {
+        margin-left: 30px;
+    }
+
+    .banner .leftside {
+        margin-left: 20px;
+    }
+
+    .leftside .text p {
+        font-size: 20px;
+    }
+
+    .leftside .text h1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .text br {
+        display: block;
+    }
+}
+
+@media (max-width: 440px) {
+    .leftside {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo img {
+        width: 102px;
+        height: 25px;
+    }
+
+    .search #field {
+        width: 280px;
+    }
+
+    header .cart {
+        margin-left: 0px;
+    }
+
+    .banner {
+        height: 191px;
+    }
+
+    .banner .leftside {
+        height: 300px;
+    }
+
+    .banner .underside {
+        margin-bottom: 30%;
+        margin-top: 30px;
+    }
+
+    .register {
+        margin: 0px;
+    }
+
+    footer .local {
+        margin: 0px auto 0px 16px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Calculadora</h1>
+            </div>
+            <div class="image">
+                <img src="assets/images/calculadora.png" alt="Calculadora"/>
+            </div>
+        </header>
+        <main>
+            <form>
+                Primeiro Número:<br/>
+                <input type="number" name="number" id="number_one" placeholder="Digite um Número"><br/>
+
+                Segundo Número:<br/>
+                <input type="number" name="number" id="number_two" placeholder="Digite um Número"><br/>
+
+                <button onclick="add()"> + </button>
+                <button onclick="subtract()"> - </button>
+                <button onclick="multiply()"> x </button>
+                <button onclick="share()"> ÷ </button>
+                <br/>
+            
+                <p>O resultado é: <span></span> </p> <br/>
+
+                <button type="reset">Limpar</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

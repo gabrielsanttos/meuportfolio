@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* VARIÁVEIS */
+:root {
+	--font-m: 'Montserrat', sans-serif;
+	--button-color-orange: linear-gradient(#ea916b, #e05a4d);
+	--button-color-gray: #373735;
+	--page-text-color-white: #fff;
+	--page-text-color-gray: #999999;
+	--page-background-color-black: #2D2D2D;
+	--page-background-form-orange: #EA916B;
+	--page-border-color-gray: #707070;
+}
+
+body {
+	font-family: var(--font-m);
+	background: var(--page-background-color-black);
+}
+
+/* HEADER */
+.container {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logo {
+	margin: 100px auto 60px auto;
+}
+
+.logo img {
+	width: 100%;
+	max-width: 160px;
+	cursor: pointer;
+}
+
+.buttons {
+	display: flex;
+	gap: 17px;
+	justify-content: center;
+}
+
+.buttons button {
+	font-family: var(--font-m);
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 12px;
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background: var(--button-color-orange);
+	box-shadow: 0px 5px 10px #000;
+	color: var(--page-text-color-white);
+	cursor: pointer;
+	line-height: 15px;
+}
+
+.introduction {
+	border-bottom: 2px solid var(--page-border-color-gray);
+	width: 100%;
+	max-width: 122px;
+	padding-bottom: 7px;
+	position: relative;
+	margin: 45px auto 29px auto;
+}
+
+.introduction p {
+	font-family: var(--font-m);
+	color: var(--page-text-color-white);
+	font-size: 22px;
+}
+
+.introduction p:before {
+	content: '';
+	width: 20px;
+	height: 6px;
+	background: var(--button-color-orange);
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.box {
+	width: 100%;
+	max-width: 780px;
+	height: 435px;
+	background: var(--page-background-form-orange);
+	border-radius: 10px;
+	padding: 40px;
+	margin: 0 auto;
+}
+
+.box p {
+	font-family: var(--font-m);
+	font-weight: 300;
+	font-size: 15px;
+	color: var(--page-text-color-white);
+	line-height: 24px;
+	text-align: left;
+}
+
+.box p:last-child {
+	margin-top: 28px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+	.box {
+		height: auto;
+	}
+
+	.box p {
+		text-align: justify;
+	}
+}
+
+/* CONTATO */
+
+.contact {
+	width: 100%;
+	max-width: 680px;
+	height: 404px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background: var(--page-background-form-orange);
+}
+
+.inputs {
+	display: flex;
+	justify-content: center;
+	gap: 9px;
+	padding: 40px 40px 16px 40px;
+}
+
+.inputs input {
+	font-family: var(--font-m);
+	font-weight: 400;
+	width: 100%;
+	max-width: 292px;
+	height: 46px;
+	border: none;
+	border-radius: 5px;
+	padding: 0px 20px;
+}
+
+.inputs input::placeholder {
+	font-size: 13px;
+	color: var(--page-text-color-gray);
+}
+
+textarea {
+	font-family: var(--font-m);
+	font-weight: 400;
+	width: 100%;
+	max-width: 591px;
+	height: 200px;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 18px;
+}
+
+textarea::placeholder {
+	color: var(--page-text-color-gray);
+}
+
+.submit input {
+	width: 160px;
+	height: 40px;
+	background: var(--button-color-gray);
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px #000;
+	text-transform: uppercase;
+	color: var(--page-text-color-white);
+	margin-top: 23px;
+	cursor: pointer;
+}
+
+footer {
+	margin: 35px;
+}
+
+footer a {
+	text-decoration: none;
+	color: var(--page-text-color-white);
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/* MEDIA QUERY INTRODUÇÃO */
+@media (max-width: 425px) {
+	.buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* MEDIA QUERY FORMULÁRIO */
+
+@media (max-width: 670px) {
+	textarea {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 425px) {
+	textarea {
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 320px) {
+	textarea {
+		max-width: 250px;
+	}
+}
