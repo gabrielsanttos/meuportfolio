@@ -288,7 +288,7 @@ main {
 .courses div {
     width: 100%;
     max-width: 400px;
-    height: 100px;
+    height: 125px;
     background: var(--page-color-hover-menu);
     border-radius: 15px;
 }
