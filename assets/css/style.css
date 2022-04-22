@@ -263,7 +263,11 @@ main {
 }
 
 .languages img:last-child {
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+.languages .git {
+    width: 65px;
 }
 
 .others h3 {
