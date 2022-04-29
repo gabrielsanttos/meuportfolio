@@ -270,6 +270,10 @@ main {
     width: 65px;
 }
 
+.languages .bootstrap {
+    width: 63px;
+}
+
 .others h3 {
     text-transform: uppercase;
     color: var(--page-color-white);
@@ -292,7 +296,7 @@ main {
 .courses div {
     width: 100%;
     max-width: 400px;
-    height: 125px;
+    height: 153px;
     background: var(--page-color-hover-menu);
     border-radius: 15px;
 }
