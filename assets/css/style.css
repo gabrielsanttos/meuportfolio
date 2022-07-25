@@ -274,6 +274,10 @@ main {
     width: 63px;
 }
 
+.languages .javascript {
+    width: 63px;
+}
+
 .others h3 {
     text-transform: uppercase;
     color: var(--page-color-white);
